@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(300, 24%, 96%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.container{
+    height: 640px;
+    width: 1400px;
+}
+
+.top-component{
+    display: flex;
+    justify-content: space-between;
+    height: 320px;
+    width: 1400px;
+}
+.bottom-component{
+    display: flex;
+    justify-content: center;
+    height: 320px;
+    width: 1400px;
+}
+
+.users{
+    font-family: 'League Spartan' , sans-serif;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    font-size: 3.3rem;
+    margin: 32px 20px 20px 100px;
+}
+
+.user-paragraph{
+    font-weight: 400;
+    color: hsl(303, 10%, 53%);
+    margin: 25px 0px 0px 100px;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+}
+
+.rating{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 800px;
+    height: 320px;
+    justify-content: center;
+    color: hsl(300, 43%, 22%);
+}
+
+.first-rating{
+    background-color: hsl(300, 16%, 90%);
+    height: 55px;
+    width: 450px;
+    padding-top: 18px;
+    padding-left: 60px;
+    font-family: 'League Spartan' , sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 6px;
+    margin: 50px 0px 15px 0px;
+}
+.second-rating{
+    background-color: hsl(300, 16%, 90%);
+    height: 55px;
+    width: 450px;
+    padding-top: 18px;
+    padding-left: 60px;
+    font-family: 'League Spartan' , sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 6px;
+    margin-left: 49px;
+    margin-top: 12px;
+}
+.third-rating{
+    background-color: hsl(300, 16%, 90%);
+    height: 55px;
+    width: 450px;
+    padding-top: 18px;
+    padding-left:60px;
+    font-family: 'League Spartan' , sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 6px;
+    margin-top: 28px;
+    margin-bottom: 130px;
+    margin-left: 89px;
+}
+
+.first-review{
+    height: 200px;
+    width: 310px;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 6px;
+    margin:35px 28px 0px 0px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.second-review{
+    height: 200px;
+    width: 310px;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 6px;
+    margin: 55px 28px 0px 3px;
+}
+.third-review{
+    height: 200px;
+    width: 310px;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 6px;
+    margin: 85px 28px 0px 3px;
+
+}
+
+.wrapper{
+    height: 100px;
+    width: 310px;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.colton{
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    margin: 32px 0 0 25px;
+}
+
+.name{
+    color: white;
+    margin: 39px 0 0 20px;
+    font-weight: 500;
+}
+
+.occupation{
+    color:hsl(333, 80%, 67%);
+    margin: 4px 5px 0 20px;
+}
+
+.review1{
+    color:white;
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+    margin: 0px 0 0px 27px;
+}
+
+@media screen and (max-width:485px){
+    .container{
+        height: 0px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    } 
+    .bottom-component{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}

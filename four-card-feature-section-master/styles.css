@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    background-color: hsl(0, 0%, 94%);
+}
+
+.top {
+    text-align: center;
+    padding-top: 35px;
+}
+
+.container .top .delivery {
+    font-weight: 200;
+    color: hsl(234, 12%, 34%);
+}
+
+.container .top .tech {
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+}
+
+.container .top .intro {
+    font-weight: 400;
+    color: hsl(229, 6%, 66%);
+    padding-top: 15px;
+}
+
+.container .top .intro-1 {
+    font-weight: 400;
+    color: hsl(229, 6%, 66%);
+    padding-top: 15px;
+    display: none;
+}
+
+.container .bottom {
+    min-height: 100%;
+    overflow: hidden;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 50px;
+}
+
+/* styling the individual divs */
+
+.container .bottom .first {
+    height: 200px;
+    width: 300px;
+    border-radius: 0.9rem;
+    background-color: #fff;
+    margin: 90px 0 0 290px;
+    border-top: 4px solid hsl(180, 62%, 55%);
+    padding-left: 30px;
+    padding-top: 20px;
+    box-shadow: 0px 1px 10px #c4c0c0;
+}
+
+.container .bottom .second {
+    display: grid;
+    justify-content: center;
+    min-height: 100%;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 30px;
+    width: 350px;
+}
+
+.container .bottom .second .second-first {
+    height: 200px;
+    width: 300px;
+    border-radius: 1rem;
+    background-color: #fff;
+    border-top: 4px solid red;
+    box-shadow: 0px 1px 10px #c4c0c0;
+}
+
+.container .bottom .second .second-second {
+    height: 195px;
+    width: 300px;
+    border-radius: 1rem;
+    background-color: #fff;
+    border-top: 4px solid orange;
+    box-shadow: 0px 1px 10px #c4c0c0;
+}
+
+
+
+.container .bottom .third {
+    height: 200px;
+    width: 300px;
+    border-radius: 1rem;
+    background-color: #fff;
+    margin: 90px 290px 0 0;
+    border-top: 4px solid rgb(81, 81, 223);
+    box-shadow: 0px 1px 10px #c4c0c0;
+}
+
+.container .bottom .first img {
+    margin: 20px 0 10px 170px;
+}
+
+/* Text Editing */
+
+.container .bottom .first h1 {
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+    font-size: 1rem;
+}
+
+.container .bottom .first p {
+    font-weight: 400;
+    color: hsl(229, 6%, 66%);
+    font-size: 0.8rem;
+    padding-top: 8px;
+}
+
+.container .bottom .second .second-first h1 {
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+    font-size: 1rem;
+    padding-top: 20px;
+    padding-left: 25px;
+}
+
+.container .bottom .second .second-first p {
+    font-weight: 400;
+    color: hsl(229, 6%, 66%);
+    font-size: 0.8rem;
+    padding-top: 8px;
+    padding-left: 25px;
+}
+
+.container .bottom .second .second-first img {
+    margin: 20px 0 10px 195px;
+}
+
+.container .bottom .second .second-second h1 {
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+    font-size: 1rem;
+    padding-top: 20px;
+    padding-left: 25px;
+}
+
+.container .bottom .second .second-second p {
+    font-weight: 400;
+    color: hsl(229, 6%, 66%);
+    font-size: 0.8rem;
+    padding-top: 8px;
+    padding-left: 25px;
+}
+
+.container .bottom .second .second-second img {
+    margin: 20px 0 10px 195px;
+}
+
+.container .bottom .third h1 {
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+    font-size: 1rem;
+    padding-top: 20px;
+    padding-left: 25px;
+}
+
+.container .bottom .third p {
+    font-weight: 400;
+    color: hsl(229, 6%, 66%);
+    font-size: 0.8rem;
+    padding-top: 8px;
+    padding-left: 25px;
+}
+
+.container .bottom .third img {
+    margin: 20px 0 10px 195px;
+}
+
+/* Responsiveness */
+
+@media only screen and (max-width:768px) {
+    .container .bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .top {
+        padding: 20px;
+    }
+
+    .container .bottom .first {
+        margin: 0px 0 20px 0px;
+    }
+
+    .container .bottom .third {
+        margin: 30px 0 20px 0px;
+    }
+
+    .container .top .intro-1 {
+        display: block;
+    }
+
+    .container .top .intro {
+        display: none;
+    }
+}
